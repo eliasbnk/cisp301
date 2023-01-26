@@ -89,9 +89,9 @@ void output_results(double subtotal, double total, double tax, float excess_poun
 	std::cout << std::endl;
 	std::cout <<  std::setw(12) << "- Truffles" << std::endl;
 	std::cout << std::endl;
-	std::cout << std::setw(12) << first_five_pounds << " lb" << " @ $20.00/lb" << std::endl;
+	std::cout << std::fixed << std::setprecision(2) << std::setw(12) << first_five_pounds << " lb" << " @ $20.00/lb" << std::endl;
 	std::cout << std::endl;
-	std::cout << std::setw(12) << excess_pounds << " lb" << " @ $12.00/lb" << std::endl;
+	std::cout << std::fixed << std::setprecision(2) << std::setw(12) << excess_pounds << " lb" << " @ $12.00/lb" << std::endl;
 	std::cout << std::endl;
 	std::cout << "-------------------------------------" << std::endl;
 	std::cout << std::setw(18) << std::fixed << std::setprecision(2) << "Subtotal: $" << subtotal << std::endl;

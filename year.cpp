@@ -18,5 +18,5 @@ void input_data(int& year) {
 	std::cin >> year;
 };
 void output_data(int year) {
-	std::cout << year << " was a great year!";
+	std::cout << year << " was a great year!" << std::endl;
 }

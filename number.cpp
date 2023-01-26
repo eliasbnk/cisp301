@@ -1,6 +1,6 @@
 // Program    : Add 2 numbers
 // Author     : Ilya Babenko - w1793796
-// Date       : Spring 2023 - T/Th @ 1:00pm 
+// Date       : Spring 2023 - T/Th @ 1:00pm
 // Description: This program adds 2 numbers together;
 
 #include <iostream>
@@ -14,8 +14,7 @@ void output_results(double a, double b, double c);
 
 int main()
 {
-	double a, b, c;       // coefficients of Ax^ + Bx + C = 
-	double root1, root2;  // roots of the equation
+	double a, b, c;       
 
 	welcome();
 	input_data(a, b);

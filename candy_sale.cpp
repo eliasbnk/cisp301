@@ -22,9 +22,9 @@
 #include <iomanip>
 
 
-void prompt_pounds(float& pounds);
-void calc_total(float pounds, double& subtotal, double& total, double tax, float& excess_pound, float &first_five_pounds);
-void print_total(double subtotal, double total, double tax, float excess_pounds, float first_five_pounds);
+void input_data(float& pounds);
+void preform_calculations(float pounds, double& subtotal, double& total, double tax, float& excess_pound, float &first_five_pounds);
+void output_results(double subtotal, double total, double tax, float excess_pounds, float first_five_pounds);
 
 int main()
 {
@@ -35,9 +35,9 @@ int main()
 	double tax = 7.25;
 	double total;
 
-	prompt_pounds(pounds);
-	calc_total(pounds, subtotal, total, tax, excess_pounds, first_five_pounds);
-	print_total(subtotal, total, tax, excess_pounds, first_five_pounds);
+	input_data(pounds);
+	preform_calculations(pounds, subtotal, total, tax, excess_pounds, first_five_pounds);
+	output_results(subtotal, total, tax, excess_pounds, first_five_pounds);
 
 }
 
@@ -47,7 +47,7 @@ int main()
 // An input module that reads how many pounds of
 // candy the customer wants to purchase.
 
-void prompt_pounds(float& pounds)
+void input_data(float& pounds)
 {
 	std::cout << "Welcome to Elias's Candy Shop!" << std::endl;
 	std::cout << "Please enter amount of candy purchased in pounds: ";
@@ -58,7 +58,7 @@ void prompt_pounds(float& pounds)
 
 // A module that calculates the customers total based on how many pounds they are buying and items set price.
 
-void calc_total(float pounds, double& subtotal, double& total, double tax, float &excess_pounds, float &first_five_pounds)
+void preform_calculations(float pounds, double& subtotal, double& total, double tax, float &excess_pounds, float &first_five_pounds)
 {
 	if (pounds <= 5)
 	{
@@ -80,7 +80,7 @@ void calc_total(float pounds, double& subtotal, double& total, double tax, float
 
 // A module that displays the subtotal, the tax, and the total.
 
-void print_total(double subtotal, double total, double tax, float excess_pounds, float first_five_pounds)
+void output_results(double subtotal, double total, double tax, float excess_pounds, float first_five_pounds)
 {
 	std::cout << std::endl;
 	std::cout << "-------------------------------------" << std::endl;

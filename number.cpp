@@ -14,7 +14,7 @@ void output_results(double a, double b, double c);
 
 int main()
 {
-	double a, b, c;       
+	double a, b, c;
 
 	welcome();
 	input_data(a, b);

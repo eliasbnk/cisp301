@@ -1,6 +1,6 @@
 // Program    : Quadratic Equation (starter file)
 // Author     : Ilya Babenko - w1793796
-// Date       : Spring 2023 - T/Th @ 1:00pm 
+// Date       : Spring 2023 - T/Th @ 1:00pm
 // Description: This program solves quadratic equations having real roots.
 
 #include <iostream>
@@ -15,13 +15,14 @@
 
  int main()
  {
-	    double a, b, c;       // coefficients of Ax^ + Bx + C = 
+	    double a, b, c;       // coefficients of Ax^ + Bx + C =
 	    double root1 , root2;  // roots of the equation
-	
+
 		welcome();
 	    input_data(a, b, c);
 	    perform_calculations(a, b, c, root1, root2);
 	    output_results(a, b, c, root1, root2);
+		return 0;
 	 }
 
  //

@@ -44,7 +44,7 @@ void input_data(double &change_amount){
 
 void perform_calculations(double change_amount,int &amount_of_hundred_dollar_bills, int &amount_of_fifty_dollar_bills, int &amount_of_twenty_dollar_bills, int &amount_of_ten_dollar_bills, int &amount_of_five_dollar_bills, int &amount_of_one_dollar_bills, int &amount_of_quarters, int &amount_of_dimes, int &amount_of_nickels, int &amount_of_pennies){
     int total = change_amount * 100 + 0.5;
-    int rhd, rq, rd, rn, rp, rod, rfd, rtd, rtwd, rffd,rohd; // <--- remainders
+    int rq, rd, rn, rp, rod, rfd, rtd, rtwd, rffd,rohd; // <--- remainders
     rohd = total % 10000;
     amount_of_hundred_dollar_bills = (total - rohd) / 10000;
     rffd = rohd % 5000;
@@ -55,7 +55,7 @@ void perform_calculations(double change_amount,int &amount_of_hundred_dollar_bil
     amount_of_ten_dollar_bills = (rtwd - rtd) / 1000;
     rfd = rtd % 500;
     amount_of_five_dollar_bills = (rtd - rfd) / 500;
-     rod = rfd % 100;
+    rod = rfd % 100;
     amount_of_one_dollar_bills = (rfd - rod) / 100;
     rq = rod % 25;
     amount_of_quarters = (rod - rq) / 25;
